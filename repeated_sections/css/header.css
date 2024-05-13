@@ -30,25 +30,13 @@ body {
     text-align: center;
 }
 
-/*Links*/
-.navbar a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-/* Hover effect */
-.navbar a:hover {
-    color: var(--grey);
-}
-
-.small_link {
+.h_small {
     font-size: 15px;
     color: var(--white);
     align-items: center;
 }
 
-.large_title {
+.h_large {
     font-size: var(--white);
     font-size: 30px;
 }
