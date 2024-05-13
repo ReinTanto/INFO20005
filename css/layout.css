@@ -1,0 +1,11 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+/*Page Fill*/
+main {
+    min-height: 90vh;
+}
+
+/*Drop Shadow*/
+.drop_shadow {
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3); 
+}
