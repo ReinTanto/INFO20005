@@ -19,6 +19,7 @@
 .caption {
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: .5em;
+    font-weight: lighter;
 }
 
 .body-text {
