@@ -1,0 +1,6 @@
+.transparent-input {
+    background-color: transparent; /* Set background color to transparent */
+    border: 1px solid #ccc; /* Example border */
+    padding: 5px; /* Example padding */
+    outline: none; /* Remove outline */
+}

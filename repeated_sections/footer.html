@@ -10,8 +10,10 @@
     .footer {
         background-color: var(--brown);
         color: var(--white);
-        padding: 20px;
         text-align: center;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     /* Two-column layout */
@@ -25,6 +27,7 @@
     .f_left-column {
         flex: 1;
         text-align: left;
+        padding-left: 10px;
     }
     
     /* Right column */
@@ -36,6 +39,13 @@
     /* Small table styles */
     .f_table {
         width: 120%;
+    }
+
+    .nl_table {
+        text-align: left;
+        border: 1px solid #fff; 
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
 </style>
@@ -83,18 +93,39 @@
                 </tr>
             </table>
         </div>
-        <!-- Right column -->
+        <!--Right column-->
         <div class="f_right-column">
-            <!-- Small table -->
-            <table class="small-table">
+            <table>
                 <tr>
-                    <td>Row 1</td>
+                    <td style="text-align: left;">
+                        <h3 class="subheading" style="font-size: 15px;">Stay in the loop!</h3>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Row 2</td>
+                    <td>
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tr>
+                                <td class="nl_table" style="width: 200px;">
+                                    <p class="body-text" style="font-size: 13px;">Your email here</p>
+                                </td>
+                                <td class="nl_table">
+                                    <p class="subheading" style="font-size: 14px;">Subscribe</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Row 3</td>
+                    <table style="border-collapse: collapse; width: 100%;">
+                        <tr>
+                            <td style="text-align: left; width: 20px;">
+                                <input type="checkbox" id="nl_checkbox" name="nl_checkbox" class="transparent-input">
+                            </td>
+                            <td style="text-align: left; padding-left: 10px;">
+                                <p class="body-text" style="font-size: 10px; width: 250px;">By checking the box, you agree that you are at least 16 years of age.</p>
+                            </td>
+                        </tr>
+                    </table>
                 </tr>
             </table>
         </div>
