@@ -1,31 +1,27 @@
+/*Reinhart Aristeo Tanto - 1376786*/
 .title {
     font-family: 'Tsukimi Rounded', sans-serif;
-    font-size: 3rem;
     font-weight: medium;
     letter-spacing: -.06em;
 }
 
 .heading {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 2rem;
     font-weight: medium;
     letter-spacing: .1em;
 }
 
 .subheading {
     font-family: 'Scada', sans-serif;
-    font-size: 1.8rem;
-    font-weight: normal;
+    font-weight: lighter;
 }
 
 .caption {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1rem;
     letter-spacing: .5em;
 }
 
 .body-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
     font-weight: lighter;
 }

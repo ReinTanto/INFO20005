@@ -1,0 +1,54 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+/*Remove margin*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar overall */
+.navbar {
+    display: flex;
+    background-color: var(--brown);
+    padding: 10px;
+    /*Center align everything*/
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50px; 
+}
+
+/*Left and right*/
+.navbar-left, .navbar-right {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/*Center*/
+.navbar-center {
+    flex: 3;
+    text-align: center;
+}
+
+/*Links*/
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: var(--grey);
+}
+
+.small_link {
+    font-size: 15px;
+    color: var(--white);
+    align-items: center;
+}
+
+.large_title {
+    font-size: var(--white);
+    font-size: 30px;
+}

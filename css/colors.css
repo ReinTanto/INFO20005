@@ -1,0 +1,26 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+/*set as variables*/
+:root {
+    --white: #F0F0F0;
+    --grey: #d3d3d3;
+    --beige: #edddce;
+    --brown: #9b5345;
+}
+
+/*set as style*/
+.white {
+    color: var(--white) 
+}
+
+.grey {
+    color: var(--grey); 
+}
+
+.beige {
+    color: var(--beige);
+}
+
+.brown {
+    color: var(--brown);
+}

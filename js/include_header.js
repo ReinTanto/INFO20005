@@ -5,9 +5,8 @@ function includeHeader() {
             document.getElementById("header").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "header.html", true);
+    xhttp.open("GET", "repeated_sections/header.html", true);
     xhttp.send();
 }
-
 // Call the function to include the header
 includeHeader();
