@@ -25,3 +25,7 @@
 .brown {
     color: var(--brown);
 }
+
+.light_brown {
+    color: var(--light_brown);
+}

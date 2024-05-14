@@ -1,0 +1,120 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+}
+/*Box backgrounds*/
+.rotated_box {
+    margin-top: 100px;
+    width: 110vw;
+    height: 500px;
+    left: -6%;
+    top:100px;
+    background-color: var(--light_brown);
+    position: absolute;
+    transform: rotate(-10deg); 
+    z-index: -2;
+}
+.under_box {
+    background-color: var(--light_brown);
+    height: 1000px;
+    width: 100vw;
+    position: relative;
+    z-index: -2;
+}
+/*1st part text*/
+.page1_text1 {
+    margin-left: 5%;
+    margin-top: 7%;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+.page1_text2 {
+    margin-left: 5%;
+    font-size: 19px;
+}
+/*button arrangement and sizing*/
+.button1 {
+    margin-top: 20px;
+    margin-left: 5%;
+    padding: 10px 30px; 
+    font-size: 20px; 
+    border-radius: 35px; 
+    border: solid var(--brown);
+    background-color: var(--beige); 
+    color: var(--brown); 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.button1:hover {
+    background-color: var(--white); 
+}
+/*1st image arrangement and sizing*/
+.img1a {
+    right: -80px;  
+    z-index: 0;
+}
+.img1b {
+    right: -50px;  
+    filter: brightness(0);
+    opacity: 20%;
+    z-index: -1;
+}
+.img1a, .img1b{
+    width: 850px;
+    top: auto;
+    bottom: 0;
+    position: absolute;
+    bottom: 0%;
+}
+.img1container {
+    position: relative; 
+    width: 100%;
+    height: 500px;
+}
+
+.img2a {
+    left: -260px;
+    z-index: 0;
+    transform: rotate(55deg);
+    top: 200px;
+}
+.img2b {
+    left: -290px;
+    filter: brightness(0);
+    opacity: 20%;
+    z-index: -1;
+    transform: rotate(60deg);
+    top: 250px;
+}
+.img2a, .img2b{
+    width: 850px;
+    position: absolute;
+}
+.img2container {
+    position: relative; 
+    width: 100%;
+}
+
+.page2_text1 {
+    text-align: right;
+    margin-top: 7%;
+    margin-right: 5%;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.page2_text2 {
+    text-align: right;
+    margin-right: 6%;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.page2_text3 {
+    text-align: right;
+    margin-right: 6%;
+    font-size: 14px;
+    font-style: italic;
+}
