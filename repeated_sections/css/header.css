@@ -30,13 +30,14 @@ body {
     text-align: center;
 }
 
-.h_small {
-    font-size: 15px;
+.small_link {
+    font-size: 5px;
     color: var(--white);
     align-items: center;
 }
 
 .h_large {
     font-size: var(--white);
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 1;
 }

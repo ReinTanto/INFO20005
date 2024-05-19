@@ -9,8 +9,8 @@ body, html {
 /*Box backgrounds*/
 .rotated_box {
     margin-top: 100px;
-    width: 110vw;
-    height: 500px;
+    width: 150vw;
+    height: 100vh;
     left: -6%;
     top:100px;
     background-color: var(--light_brown);
@@ -64,11 +64,10 @@ body, html {
     z-index: -1;
 }
 .img1a, .img1b{
-    width: 850px;
-    top: auto;
-    bottom: 0;
+    width: 500px;
+    top: 10%;
     position: absolute;
-    bottom: 0%;
+    bottom: auto;
 }
 .img1container {
     position: relative; 
@@ -80,7 +79,7 @@ body, html {
     left: -260px;
     z-index: 0;
     transform: rotate(55deg);
-    top: 200px;
+    top: 300px;
 }
 .img2b {
     left: -290px;
@@ -88,10 +87,10 @@ body, html {
     opacity: 20%;
     z-index: -1;
     transform: rotate(60deg);
-    top: 250px;
+    top: 350px;
 }
 .img2a, .img2b{
-    width: 850px;
+    width: 600px;
     position: absolute;
 }
 .img2container {
