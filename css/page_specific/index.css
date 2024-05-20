@@ -29,19 +29,20 @@ body, html {
 .page1_text1 {
     margin-left: 5%;
     margin-top: 7%;
-    font-size: 55px;
+    font-size: 2.9rem;
     margin-bottom: 25px;
+    padding-right: 2%;
 }
 .page1_text2 {
     margin-left: 5%;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 /*button arrangement and sizing*/
 .button1 {
-    margin-top: 20px;
+    margin-top: 3%;
     margin-left: 5%;
-    padding: 10px 30px; 
-    font-size: 20px; 
+    padding: 2% 5%; 
+    font-size: 1.5rem; 
     border-radius: 35px; 
     border: solid var(--brown);
     background-color: var(--beige); 
@@ -75,14 +76,15 @@ body, html {
     height: 500px;
 }
 
+/*2nd image arrangement and sizing*/
 .img2a {
-    left: -260px;
+    left: -250px;
     z-index: 0;
     transform: rotate(55deg);
     top: 300px;
 }
 .img2b {
-    left: -290px;
+    left: -280px;
     filter: brightness(0);
     opacity: 20%;
     z-index: -1;
@@ -90,7 +92,7 @@ body, html {
     top: 350px;
 }
 .img2a, .img2b{
-    width: 600px;
+    width: 150%;
     position: absolute;
 }
 .img2container {
@@ -102,18 +104,18 @@ body, html {
     text-align: right;
     margin-top: 7%;
     margin-right: 5%;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
 }
 .page2_text2 {
     text-align: right;
     margin-right: 6%;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 6px;
 }
 .page2_text3 {
     text-align: right;
     margin-right: 6%;
-    font-size: 14px;
+    font-size: .9rem;
     font-style: italic;
 }

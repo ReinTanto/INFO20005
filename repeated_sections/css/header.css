@@ -1,6 +1,6 @@
 /*Reinhart Aristeo Tanto - 1376786*/
 
-/*Remove margin*/
+/* Remove margin */
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 /*Left and right*/
 .navbar-left, .navbar-right {
     flex: 1;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 /*Center*/
@@ -34,6 +34,7 @@ body {
     font-size: 5px;
     color: var(--white);
     align-items: center;
+    padding-top: 10px;
 }
 
 .h_large {
