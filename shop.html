@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbleHandcrafts</title> 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Link fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +16,117 @@
     <!--Link CSS-->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/layout.css">
 
     <!--Link aditional CSS-->
     <link rel="stylesheet" href="repeated_sections/css/header.css">
+    <link rel="stylesheet" href="repeated_sections/css/footer.css">
+
+    <!--Link Main CSS-->
+    <link rel="stylesheet" href="css/page_specific/shop.css">
+
 </head>
-<body>
+<body style="background-color: var(--light_brown);">
 
-    <div id="header"></div>
+    <navigation><header><div id="header"></div></header></navigation>
 
-    <h1 class="title">Able Handcrafts</h1>
-    <h1 class="heading">Heading</h1>
-    <h2 class="subheading">Subheading</h2>
-    <h3 class="caption">Test</h3>
+    <navigation>
+        <div class="class= category_grid">
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">All</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Coffee Sleeves</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Cushion Covers</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Crochet Towels</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Deluxe Towel</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Glasses Case</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Handmade Cards</h2>
+            </a>
+            <a href="shop.html"  class="category_container">
+                <h2 class="heading category_text">Cozies</h2>
+            </a>
+        </div>
+    </navigation>
 
+    <main>  
+        <div class="flex_grid">
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p1.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">GOLDEN WATTLE - Cussion Cover</p>
+                    <p class="body-text product_price">$45.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p2.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">RED ROSES - Deluxe Handing Hand Towel</p>
+                    <p class="body-text product_price">$22.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p3.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">COFFEE WORDS #2 - Coffee Sleeves</p>
+                    <p class="body-text product_price">$12.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p4.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">ABALONE SHELL - Coffee Sleeves</p>
+                    <p class="body-text product_price">$12.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p5.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">AQUA SPOT - 3 Piece Microwave Cozy Set</p>
+                    <p class="body-text product_price">$42.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p6.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">PINK ORCHID - Small Microwave Cozy</p>
+                    <p class="body-text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p7.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">GREY HEXAGON - Small Microwave Cozy</p>
+                    <p class="body-text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            <a href="shop.html" class="product_container">
+                <section>
+                    <img src="images/shop/p8.PNG" alt="Product Picture" class="product_img">
+                    <p class="body-text product_name">BLACK/RED - Small Microwave Cozy</p>
+                    <p class="body-text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            </div>
+          </div>
+    </main>
+
+    <footer><div id="footer"></div></footer>
+
+    <!--Scripts-->
     <script src="js/include_header.js"></script>
+    <script src="js/include_footer.js"></script>
 </body>
 </html>
