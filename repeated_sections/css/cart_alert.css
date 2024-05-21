@@ -1,0 +1,20 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+.cart_alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--brown);
+    color: var(--white);
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+    text-align: center;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 1);
+}
+
+.fadeIn {
+    opacity: 1; /* Make the alert message visible */
+}

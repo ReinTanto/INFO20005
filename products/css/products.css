@@ -1,9 +1,12 @@
 /*Reinhart Aristeo Tanto - 1376786*/
 
+/*table, td, div {
+    border: 1px solid black;
+}*/
+
 main {
     display: flex;
   justify-content: center;
-  min-height: 100vh; 
   margin-top: 10vh;
   margin-left: 10%;
   margin-right: 10%;
@@ -18,14 +21,14 @@ main {
     padding: 0;
 }
 .product_info1, .product_info2, .spacer1 {
-    flex: 1 0 300px; 
+    flex: 1 0 200px; 
     padding: 0;
     margin: 0;
 }
 
 /*product image*/
 .product_image_container {
-    flex: 1 0 270px; 
+    flex: 1 0 20px; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -42,7 +45,7 @@ main {
 .ratings_table {
     vertical-align: middle;
     left: 0px;
-    margin-bottom: -1.5rem;
+    margin-bottom: 0;
 }
 .star {
     font-size: 1.3rem;
@@ -61,7 +64,7 @@ main {
     font-weight: 500;
     font-size: 1.8rem;
     padding: 0;
-    margin-bottom: -.95rem;
+    margin-bottom: 0;
 }
 
 /*Price*/
@@ -92,7 +95,7 @@ main {
     font-size: 1.2rem;
 }
 .size_table {
-    margin-top: -6%;
+    margin-top: 0;
     width: 55%;
 }
 .size_table td{
@@ -222,7 +225,12 @@ main {
     color: var(--grey);
 }
 .expandable_segment_toggle_div {
-    display: none;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height .5s ease;
+}
+.expandable_segment_toggle_div.show {
+    max-height: 200px; 
 }
 .expandable_segment_toggle_text {
     font-size: .8rem;
@@ -240,7 +248,7 @@ main {
     .product_info1 {order: -1;}
     .product_image_container {
         order: 1;
-        margin-top: -40%;
+        margin-top: 0;
     }
     .product_info2 {order: 2;}
     .spacer1 {order: 3;}

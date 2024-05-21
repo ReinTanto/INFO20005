@@ -31,14 +31,14 @@ body {
 }
 
 .small_link {
-    font-size: 5px;
+    font-size: 1rem;
     color: var(--white);
     align-items: center;
     padding-top: 10px;
 }
 
 .h_large {
-    font-size: var(--white);
+    color: var(--white);
     font-size: 25px;
     line-height: 1;
 }

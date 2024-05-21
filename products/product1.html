@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
     
     <!--Link CSS-->
-    <link rel="stylesheet" href="../css/colors.css">
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/links.css">
-    <link rel="stylesheet" href="../css/input.css">
-    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/links.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/layout.css">
 
     <!--Link aditional CSS-->
-    <link rel="stylesheet" href="../repeated_sections/css/header.css">
-    <link rel="stylesheet" href="../repeated_sections/css/footer.css">
+    <link rel="stylesheet" href="/repeated_sections/css/header.css">
+    <link rel="stylesheet" href="/repeated_sections/css/footer.css">
+    <link rel="stylesheet" href="/repeated_sections/css/cart.css">
+    <link rel="stylesheet" href="/repeated_sections/css/cart_alert.css">
 
     <!--Link Main CSS-->
     <link rel="stylesheet" href="/products/css/products.css">
@@ -28,7 +30,7 @@
 </head>
 <body style="background-color: var(--beige);">
 
-    <navigation><header><div data-include="../repeated_sections/header.html"></div></header></navigation>
+    <navigation><header><div data-include="/repeated_sections/header.html"></div></header></navigation>
 
     <main>
         <div class="product_container">
@@ -98,19 +100,19 @@
 
                 <table class="add_table">
                     <td class="add_quantity">
-                           <p1 class="body_text add_quantity_text">1</p1>
-                            <div class="dropdown">
-                                <button class="dropbtn">&#8711;</button>
-                                <div class="dropdown_content">
-                                  <p class="body_text">1</p>
-                                  <p class="body_text">2</p>
-                                  <p class="body_text">3</p>
-                                  <p class="body_text">4</p>
-                                  <p class="body_text">5</p>
-                                </div>
-                              </div>
+                        <p1 class="body_text add_quantity_text">1</p1>
+                        <div class="dropdown">
+                            <button class="dropbtn">&#8711;</button>
+                            <div class="dropdown_content">
+                                <p class="body_text">1</p>
+                                <p class="body_text">2</p>
+                                <p class="body_text">3</p>
+                                <p class="body_text">4</p>
+                                <p class="body_text">5</p>
+                            </div>
+                        </div>
                     </td>
-                    <td class="add_button">
+                    <td class="add_button" id="addToCartButton">
                         <p class="body_text add_button_text"> Add to cart</p>
                     </td>
                 </table>
@@ -170,12 +172,20 @@
                 </article>
             </div>
           </div>
+
     </main>
 
-    <footer><div data-include="../repeated_sections/footer.html"></div></footer>
+    <!--These are overlays-->
+    <div id="cart_overlay" class="cart_overlay"></div>
+    <div class="cart_alert heading" id="alertMessage"></div>
+
+    <!--This is footer-->
+    <footer><div data-include="/repeated_sections/footer.html"></div></footer>
 
     <!--Scripts-->
     <script src="../js/include_html.js"></script>
     <script src="../js/toggle_visibility.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/cart_alert.js"></script>
 </body>
 </html>
