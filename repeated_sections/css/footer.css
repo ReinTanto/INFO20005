@@ -64,19 +64,19 @@
     width: 100%;
 }
 .email_box {width: 100px;}
-.email_text {font-size: 10px;}
-.subscribe {font-size: 12px;}
+.email_text {font-size: .5rem;}
+.subscribe {font-size: .6rem;}
 
 .checkbox_container {
     text-align: left; 
-    width: 20px;
+    width: 4rem;
 }
 .checkbox_textbox {
     text-align: left; 
     padding-left: 10px;
 }
 .checkbox_text {
-    font-size: 10px;
+    font-size: .6rem;
     width: 90%;
 }
 
@@ -86,4 +86,4 @@
     border: none;
     border-top: .3px solid var(--white);
 }
-.bottom_text {font-size: 9px;}
+.bottom_text {font-size: .5rem;}

@@ -1,5 +1,6 @@
 /*Reinhart Aristeo Tanto - 1376786*/
 
+/* category tab above */
 .category_grid {
     display: flex;
     flex-wrap: wrap;
@@ -9,19 +10,25 @@
     padding: 5px;
     gap: .3rem;
 }
-
 .category_container {
     background-color: var(--beige);
     border: 3px solid var(--brown);
+    color: var(--brown);
+}
+.category_container_selected {
+    background-color: var(--brown);
+    border: 3px solid var(--white);
+    color: var(--white);
+}
+.category_container, .category_container_selected{
     border-radius: 1.6rem;
     text-align: center;
-    font-size: 1rem;
     transition: transform 0.3s ease;
     display: inline-block;
     padding: 10px 20px; 
     text-align: center;
     vertical-align: middle; 
-    min-width: 9.2rem;
+    min-width: 7rem;
 }
 .category_container:hover {
     transform: scale(1.02);
@@ -29,10 +36,9 @@
 }
 .category_text {
     padding: 0;
-    font-size: 1.3rem;
+    font-size: .9rem;
     font-weight: 500;
     margin: 0;
-    color: var(--brown);
 }
 
 /*product grid*/
@@ -86,4 +92,10 @@
     font-size: 1rem;
     font-weight: 500;
     margin-top: 2%;
+}
+
+@media (max-width: 400px) {
+    .product_container{
+        max-width: 400px;
+    }
 }
