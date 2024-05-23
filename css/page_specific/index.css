@@ -29,20 +29,21 @@ body, html {
 .page1_text1 {
     margin-left: 5%;
     margin-top: 7%;
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-bottom: 25px;
     padding-right: 2%;
 }
 .page1_text2 {
     margin-left: 5%;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    width: 50%;
 }
 /*button arrangement and sizing*/
 .button1 {
     margin-top: 3%;
     margin-left: 5%;
-    padding: 2% 5%; 
-    font-size: 1.5rem; 
+    padding: 1rem 1.5rem; 
+    font-size: 2rem; 
     border-radius: 35px; 
     border: solid var(--brown);
     background-color: var(--beige); 
@@ -65,8 +66,8 @@ body, html {
     z-index: -1;
 }
 .img1a, .img1b{
-    width: 500px;
-    top: 10%;
+    width: 80%;
+    top: -10%;
     position: absolute;
     bottom: auto;
 }
@@ -81,7 +82,7 @@ body, html {
     left: -250px;
     z-index: 0;
     transform: rotate(55deg);
-    top: 300px;
+    top: 200px;
 }
 .img2b {
     left: -280px;
@@ -89,10 +90,10 @@ body, html {
     opacity: 20%;
     z-index: -1;
     transform: rotate(60deg);
-    top: 350px;
+    top: 250px;
 }
 .img2a, .img2b{
-    width: 150%;
+    width: 100%;
     position: absolute;
 }
 .img2container {
@@ -104,13 +105,13 @@ body, html {
     text-align: right;
     margin-top: 7%;
     margin-right: 5%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 5%;
 }
 .page2_text2 {
     text-align: right;
     margin-right: 6%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 6px;
 }
 .page2_text3 {
@@ -118,4 +119,92 @@ body, html {
     margin-right: 6%;
     font-size: .9rem;
     font-style: italic;
+}
+
+/*breakpoint mobile*/
+@media (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    /*Box backgrounds*/
+    .rotated_box {
+        margin-top: 100px;
+        width: 150vw;
+        height: 100vh;
+        left: -6%;
+        top:100px;
+    }
+    .under_box {
+        height: 1000px;
+        width: 100vw;
+    }
+    /*1st part text*/
+    .page1_text1 {
+        margin-left: 5%;
+        margin-top: 7%;
+        font-size: 2.9rem;
+        margin-bottom: 25px;
+        padding-right: 2%;
+    }
+    .page1_text2 {
+        margin-left: 5%;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    /*button arrangement and sizing*/
+    .button1 {
+        margin-top: 3%;
+        margin-left: 5%;
+        padding: 2% 5%; 
+        font-size: 1.5rem;
+    }
+    /*1st image arrangement and sizing*/
+    .img1a {
+        right: -80px;  
+    }
+    .img1b {
+        right: -50px;  
+    }
+    .img1a, .img1b{
+        width: 500px;
+        top: 10%;
+    }
+    .img1container {
+        width: 100%;
+        height: 500px;
+    }
+    
+    /*2nd image arrangement and sizing*/
+    .img2a {
+        left: -250px;
+        top: 300px;
+    }
+    .img2b {
+        left: -280px;
+        top: 350px;
+    }
+    .img2a, .img2b{
+        width: 150%;
+    }
+    .img2container {
+        width: 100%;
+    }
+    
+    .page2_text1 {
+        margin-top: 7%;
+        margin-right: 5%;
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+    .page2_text2 {
+        margin-right: 6%;
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    .page2_text3 {
+        margin-right: 6%;
+        font-size: .9rem;
+    }
 }
