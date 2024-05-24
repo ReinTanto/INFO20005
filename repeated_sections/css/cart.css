@@ -1,24 +1,10 @@
 /*Reinhart Aristeo Tanto - 1376786*/
 
-table, td, div, p, h1, h2, h3 {
-  border: 1px solid black;
-}
+
 
 /*For display different pages in checkout*/
-.page1 {
+.hidden_page {
   display: none;
-}
-
-.page2 {
-  display: none;
-}
-
-.page3 {
-  display: none;
-}
-
-.page4 {
-  display: block;
 }
 
 .cart_overlay {
@@ -266,7 +252,7 @@ table, td, div, p, h1, h2, h3 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .checkbox_text {
@@ -276,8 +262,15 @@ table, td, div, p, h1, h2, h3 {
 }
 
 .hidden_input_table {
-  display: none;
-  margin-top: 0;
+  margin-top: 1rem;
+  visibility: collapse;
+  overflow: hidden; 
+  opacity: 0;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+.hidden_input_table.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*4th page, confirmation page*/

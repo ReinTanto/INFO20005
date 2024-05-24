@@ -1,0 +1,25 @@
+/*Reinhart Aristeo Tanto - 1376786*/
+
+.coming_soon {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem 3rem;
+    background-color: var(--light_brown);
+    border: .2rem solid var(--brown);
+    color: var(--beige);
+    border-radius: 10px;
+    width: 50%;
+    margin: 45vh auto;
+    min-height: 5vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+.small_link2 {
+    display: block;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.small_link2:hover {
+    color: var(--brown);
+}

@@ -12,7 +12,7 @@
 <div class="cart_box">
 
   <!--1st page, Cart page-->
-  <div class="page1">
+  <div class="" id="page1">
     <table class="top_row">
       <td></td>
       <td><h2 class="heading cart_title">Your Cart</h2></td>
@@ -93,11 +93,11 @@
     </table>
     <p class="caption shipping_notice">Shipping & taxes calculated at checkout</p>
 
-    <button class="next_button subheading">CHECK OUT</button>
+    <button class="next_button subheading" onclick="toggleVisibility2('page2', 'page1')">CHECK OUT</button>
   </div>
 
   <!--2nd page, Shipping Details-->
-  <div class="page2">
+  <div class="hidden_page" id="page2">
 
       <table class="top_row">
         <td><h2 class="heading cart_title">Shipping Details</h2></td>
@@ -228,12 +228,12 @@
       </tr>
     </table>
 
-    <button class="next_button subheading">CONFIRM</button>
+    <button class="next_button subheading" onclick="toggleVisibility2('page3', 'page2')">CONFIRM</button>
 
   </div>
 
   <!--3rd page, Payment Details-->
-  <div class="page3">
+  <div class="hidden_page" id="page3">
 
     <!--Top row-->
     <table class="top_row">
@@ -276,14 +276,14 @@
     <!--Hidden input table checkbox-->
     <table class="payment_address_container">
     <td>
-    <input type="checkbox" id="payment_checkbox" class="payment_address_checkbox" checked>
+    <input type="checkbox" id="payment_checkbox" class="payment_address_checkbox" onchange="toggleVisibility('hidden_input1')" checked>
     </td>
     <td>
       <p class="body_text checkbox_text">My delivery & billing address are the same.</p>
     </td>
     </table>
     <!--Hidden input table-->
-    <table class="input_table hidden_input_table">
+    <table class="input_table hidden_input_table" id="hidden_input1">
 
       <tr>
         <td class="input_label">
@@ -332,12 +332,12 @@
 
     </table>
 
-    <button class="next_button subheading">CONFIRM</button>
+    <button class="next_button subheading" onclick="toggleVisibility2('page4', 'page3')">CONFIRM</button>
 
   </div>
 
   <!--4th page, Confirmation Page-->
-  <div class="page4">
+  <div class="hidden_page" id="page4">
     <div class="confirmation_page">
       <h1 class="heading confirmation_heading">THANKS FOR YOU ORDER!</h1>
       <p class="body_text confirmation_text">Your order #0000 is in the works. We sent an email to email@email.com with your order recipt.</p>
@@ -346,6 +346,8 @@
   </div>
 
 </div>
+
+<script src="/js/toggle_visibility.js"></script>
 
 </body>
 </html>
