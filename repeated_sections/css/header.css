@@ -8,37 +8,52 @@ body {
 
 /* Navigation bar overall */
 .navbar {
-    display: flex;
     background-color: var(--brown);
-    padding: 10px;
-    /*Center align everything*/
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 50px; 
+    border-collapse: collapse;
+    width: 100%;
+}
+.navbar td {
+    width: 33%;
 }
 
 /*Left and right*/
-.navbar-left, .navbar-right {
-    flex: 1;
-    padding: 10px;
+.navbar_left, .navbar_right {
+    padding: 1.5rem;
+    vertical-align: middle;
+}
+.navbar_right {
+    text-align: right;
 }
 
 /*Center*/
-.navbar-center {
-    flex: 3;
+.navbar_center {
     text-align: center;
 }
 
 .small_link {
     font-size: 1rem;
     color: var(--white);
-    align-items: center;
-    padding-top: 10px;
+    display: inline-block;
+    padding: 0;
 }
 
 .h_large {
     color: var(--white);
     font-size: 25px;
     line-height: 1;
+}
+
+/*Cart counter on right*/
+.cart_quantity_counter {
+    background-color: var(--white);
+    color: var(--brown);
+    padding: .2rem .4rem;
+    border-radius: 1rem;
+    font-size: .6rem;
+}
+
+.cart_button_table td {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
 }
