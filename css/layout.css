@@ -18,9 +18,9 @@ main {
 .center_box {
     background-color: var(--brown);
     padding: 1rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 40vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
