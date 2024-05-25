@@ -2,7 +2,7 @@
 
 //function to open cart
 function openCart() {
-    fetch('../repeated_sections/cart.html')
+    fetch('./repeated_sections/cart.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('cart_overlay').innerHTML = html;
