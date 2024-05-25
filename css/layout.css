@@ -13,3 +13,25 @@ main {
 .hidden {
     display: none;
 }
+
+/*for reset page*/
+.center_box {
+    background-color: var(--brown);
+    padding: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40vh;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.center_box_contents1 {
+    font-size: 2rem;
+    color: var(--white);
+}
+.center_box_contents2 {
+    font-size: 1rem;
+    display: block;
+    margin-top: 1rem;
+}
