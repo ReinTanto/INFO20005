@@ -30,7 +30,7 @@
 </head>
 <body style="background-color: var(--beige);">
 
-    <navigation><header><div data-include="/repeated_sections/header.html"></div></header></navigation>
+    <navigation><header><div data-include="../repeated_sections/header.html"></div></header></navigation>
 
     <main>
         <div class="product_container">
@@ -117,7 +117,7 @@
                         </div>
                     </td>
                     <td class="add_button" id="addToCartButton">
-                        <p class="body_text add_button_text"> Add to cart</p>
+                        <a href="../hardcoded_cart/path1/cart1.1/products/product1.html" class="body_text add_button_text"> Add to cart</a>
                     </td>
                 </table>
 
@@ -184,12 +184,13 @@
     <div class="cart_alert heading" id="alertMessage"></div>
 
     <!--This is footer-->
-    <footer><div data-include="/repeated_sections/footer.html"></div></footer>
+    <footer><div data-include="../repeated_sections/footer.html"></div></footer>
 
     <!--Scripts-->
-    <script src="../js/include_html.js"></script>
-    <script src="../js/toggle_visibility.js"></script>
+    <script src="/js/include_html.js"></script>
+    <script src="/js/toggle_visibility.js"></script>
     <script src="/js/cart.js"></script>
     <script src="/js/cart_alert.js"></script>
+    <script src="/js/add_cart.js"></script>
 </body>
 </html>

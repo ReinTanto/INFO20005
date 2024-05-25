@@ -1,0 +1,137 @@
+<!--Reinhart Aristeo Tanto - 1376786-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbleHandcrafts</title> 
+
+    <!--Link fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    
+    <!--Link CSS-->
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="stylesheet" href="/css/links.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/layout.css">
+
+    <!--Link aditional CSS-->
+    <link rel="stylesheet" href="/repeated_sections/css/header.css">
+    <link rel="stylesheet" href="/repeated_sections/css/footer.css">
+
+    <!--Link Main CSS-->
+    <link rel="stylesheet" href="/css/page_specific/shop.css">
+
+</head>
+<body style="background-color: var(--light_brown);">
+
+    <navigation><header><div data-include="../repeated_sections/header.html"></div></header></navigation>
+
+    <navigation>
+        <div class="class= category_grid">
+            <a href="../main/shop.html"  class="category_container">
+                <h2 class="heading category_text">All</h2>
+            </a>
+            <a href="shop1.html"  class="category_container">
+                <h2 class="heading category_text">Coffee Sleeves</h2>
+            </a>
+            <a href="shop2.html"  class="category_container_selected">
+                <h2 class="heading category_text">Cushion Covers</h2>
+            </a>
+            <a href="shop3.html"  class="category_container">
+                <h2 class="heading category_text">Crochet Towels</h2>
+            </a>
+            <a href="shop4.html"  class="category_container">
+                <h2 class="heading category_text">Deluxe Towel</h2>
+            </a>
+            <a href="shop5.html"  class="category_container">
+                <h2 class="heading category_text">Glasses Case</h2>
+            </a>
+            <a href="shop6.html"  class="category_container">
+                <h2 class="heading category_text">Handmade Cards</h2>
+            </a>
+            <a href="shop7.html"  class="category_container">
+                <h2 class="heading category_text">Cozies</h2>
+            </a>
+        </div>
+    </navigation>
+
+    <!--Product listings-->
+    <main>  
+        <div class="flex_grid">
+            <a href="../products/product1.html" class="product_container">
+                <section>
+                    <img src="/images/shop/p1.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">GOLDEN WATTLE - Cussion Cover</p>
+                    <p class="body_text product_price">$45.00 USD</p>
+                </section>
+            </a>
+            <a href="../products/product2.html" class="product_container hidden">
+                <section>
+                    <img src="/images/shop/p2.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">RED ROSES - Deluxe Handing Hand Towel</p>
+                    <p class="body_text product_price">$22.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p3.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">COFFEE WORDS #2 - Coffee Sleeves</p>
+                    <p class="body_text product_price">$12.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p4.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">ABALONE SHELL - Coffee Sleeves</p>
+                    <p class="body_text product_price">$12.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p5.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">AQUA SPOT - 3 Piece Microwave Cozy Set</p>
+                    <p class="body_text product_price">$42.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p6.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">PINK ORCHID - Small Microwave Cozy</p>
+                    <p class="body_text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p7.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">GREY HEXAGON - Small Microwave Cozy</p>
+                    <p class="body_text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            <a href="../main/coming_soon.html" class="product_container product_nostock hidden">
+                <section>
+                    <img src="/images/shop/p8.PNG" alt="Product Picture" class="product_img">
+                    <p class="body_text product_name">BLACK/RED - Small Microwave Cozy</p>
+                    <p class="body_text product_price">$14.00 USD</p>
+                </section>
+            </a>
+            </div>
+          </div>
+    </main>
+
+    <!--This is cart overlay-->
+    <div id="cart_overlay" class="cart_overlay"></div>
+
+    <!--This is footer-->
+    <footer><div data-include="../repeated_sections/footer.html"></div></footer>
+
+
+    <!--Scripts-->
+    <script src="/js/include_html.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/toggle_visibility.js"></script>
+</body>
+</html>

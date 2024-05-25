@@ -1,0 +1,196 @@
+<!--Reinhart Aristeo Tanto - 1376786-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbleHandcrafts</title> 
+
+    <!--Link fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    
+    <!--Link CSS-->
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/links.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/layout.css">
+
+    <!--Link aditional CSS-->
+    <link rel="stylesheet" href="/repeated_sections/css/header.css">
+    <link rel="stylesheet" href="/repeated_sections/css/footer.css">
+    <link rel="stylesheet" href="/repeated_sections/css/cart.css">
+    <link rel="stylesheet" href="/repeated_sections/css/cart_alert.css">
+
+    <!--Link Main CSS-->
+    <link rel="stylesheet" href="/products/css/products.css">
+
+</head>
+<body style="background-color: var(--beige);">
+
+    <navigation><header><div data-include="/repeated_sections/header.html"></div></header></navigation>
+
+    <main>
+        <div class="product_container">
+            
+            <!--Image-->
+            <div class="product_image_container">
+              <img src="/images/shop/p2.PNG" alt="Product Image" class="product_image">
+            </div>
+            
+            <!--Product name, reviews and price-->
+            <div class="product_info1">
+
+                <table class="ratings_table">
+                    <td>
+                        <div class="star">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="caption reviews">2 reviews</p>
+                    </td>
+                </table>
+
+                <h1 class="heading product_name">RED ROSES - Deluxe Handling Hand Towel</h1>
+                <!--Price table-->
+                <table class="price_table">
+                    <td>
+                        <p class="body_text price">$ 22.00</p>
+                    </td>
+                    <td>
+                        <p class="body_text currency">USD</p>
+                    </td>
+                </table>
+            </div>
+
+            <!--Empty spacer to fill space-->
+            <div class="spacer1"></div>
+
+            <!--All other info-->
+            <div class="product_info2">
+
+                <hr class="line_seperator">
+
+                <!--Size table-->
+                <table class="size_table hidden">
+                    <tr>
+                        <p class="heading size_heading hidden">
+                            SELECT SIZE:
+                        </p>
+                    </tr>
+                    <td>
+                        <div class="size_circle">
+                            <span class="body_text size_letter">S</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="size_circle">
+                            <span class="body_text size_letter">M</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="size_circle">
+                            <span class="body_text size_letter">L</span>
+                        </div>
+                    </td>
+                </table>
+
+                <table class="add_table">
+                    <td class="add_quantity">
+                        <p1 class="body_text add_quantity_text">1</p1>
+                        <div class="dropdown">
+                            <button class="dropbtn">&#8711;</button>
+                            <div class="dropdown_content">
+                                <p class="body_text">1</p>
+                                <p class="body_text">2</p>
+                                <p class="body_text">3</p>
+                                <p class="body_text">4</p>
+                                <p class="body_text">5</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="add_button" id="addToCartButton">
+                        <a href="/hardcoded_cart/path2/cart2.1/products/product2.html" class="body_text add_button_text"> Add to cart</a>
+                    </td>
+                </table>
+
+                <article>
+
+                    <ul class="body_text list1">
+                        <li class="list1_element">Luxurious hotel quality, doubled hand towel, with decorative fabric border on front side of towel, back fold of towel is plain and matching fabric topper with Loop & Button closure to fit most rails or knobs.</li>
+                        <li class="list1_element">Suitable for Kitchen, Bathrooms, Ensuite, Powder Rooms, Laundry, Change Tables, Caravans - anywhere damp hands need drying.</li>
+                        <li class="list1_element">Due to the fabric pattern repeat, no two towels will ever be the same depending on the placement of fabric cut for each towel piece.   The towel  supplied may look slightly different to the photo shown. </li>
+                        <li class="list1_element">Aproximate Total Drop when hanging 46 to 48cm,  Width at base of towel approx 40cm</li>
+                    </ul>
+
+                    <hr class="line_seperator">
+
+                    <table class="expandable_segment_table">
+                        <td>
+                            <p class="body_text expandable_segment_text">Materials</p>
+                        </td>
+                        <td class="expandable_segment_button_segment">
+                            <button onclick="toggleVisibility('div1')" class="expandable_segment_button title">+</button>
+                        </td>
+                    </table>
+                    <div id="div1" class="expandable_segment_toggle_div">
+                        <p class="body_text expandable_segment_toggle_text">100% Cotton</p>
+                    </div>
+
+                    <hr class="line_seperator">
+
+                    <table class="expandable_segment_table">
+                        <td>
+                            <p class="body_text expandable_segment_text">Washing & Cleaning</p>
+                        </td>
+                        <td class="expandable_segment_button_segment">
+                            <button onclick="toggleVisibility('div2')" class="expandable_segment_button title">+</button>
+                        </td>
+                    </table>
+                    <div id="div2" class="expandable_segment_toggle_div">
+                        <p class="body_text expandable_segment_toggle_text">Machine Washable<br>Line Dry or Tumble Dry<br>Do not bleach.</p>
+                    </div>
+
+                    <hr class="line_seperator">
+
+                    <table class="expandable_segment_table">
+                        <td>
+                            <p class="body_text expandable_segment_text">Shipping</p>
+                        </td>
+                        <td class="expandable_segment_button_segment">
+                            <button onclick="toggleVisibility('div3')" class="expandable_segment_button title">+</button>
+                        </td>
+                    </table>
+                    <div id="div3" class="expandable_segment_toggle_div">
+                        <p class="body_text expandable_segment_toggle_text">Free Standard Delivery<br>Ships in 2-3 Days</p>
+                    </div>
+
+                    <hr class="line_seperator">
+                </article>
+            </div>
+          </div>
+
+    </main>
+
+    <!--These are overlays-->
+    <div id="cart_overlay" class="cart_overlay"></div>
+    <div class="cart_alert heading" id="alertMessage"></div>
+
+    <!--This is footer-->
+    <footer><div data-include="/repeated_sections/footer.html"></div></footer>
+
+    <!--Scripts-->
+    <script src="../js/include_html.js"></script>
+    <script src="../js/toggle_visibility.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/cart_alert.js"></script>
+    <script src="/js/add_cart.js"></script>
+</body>
+</html>

@@ -72,6 +72,9 @@ main {
     font-weight: 300;
     font-size: 1.2rem;
 }
+.price.soldout {
+    text-decoration: line-through;
+}
 .currency {
     font-family: 500;
     font-size: .6rem;
@@ -128,6 +131,7 @@ main {
     color: var(--beige);
     background-color: var(--brown);
     border: 2px solid var(--brown);
+    height: 2.3rem;
 }
 .add_button:hover {
     color: var(--brown);
@@ -136,6 +140,7 @@ main {
 .add_button_text {
     font-weight: 400;
     font-size: .7rem;
+    height: 1rem;
 }
 .add_quantity {
     margin: 0;
@@ -147,6 +152,15 @@ main {
 .add_quantity_text {
     font-weight: 500;
     font-size: 1rem;
+}
+/*for when soldout*/
+.add_button.soldout {
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+    color: var(--brown);
+}
+.add_table.soldout { 
+    border: 2px solid var(--grey);
 }
 
 /*Dropdown menu*/
@@ -258,6 +272,10 @@ main {
     }
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 769px) {
     main {
         margin-top: 2vh;
@@ -295,6 +313,12 @@ main {
         position: absolute;
         top: 0;
     }
+    .product_info2 {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 950px ) and (min-width: 900px) {
     .product_info2 {
         margin-top: -40%;
     }

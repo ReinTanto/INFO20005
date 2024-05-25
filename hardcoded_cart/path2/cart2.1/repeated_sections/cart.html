@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/repeated_sections/css/cart.css">
+<link rel="stylesheet" href="/css/colors.css">
+<link rel="stylesheet" href="/css/fonts.css">
+</head>
+<body>
+
+<div class="cart_box">
+
+  <!--1st page, Cart page-->
+  <div class="" id="page1">
+    <table class="top_row">
+      <td></td>
+      <td><h2 class="heading cart_title">Your Cart</h2></td>
+      <td class="close_container"><button class="close_button body_text" onclick="closeCart()">&times;</button></td>
+    </table>
+
+    <hr class="cart_border">
+
+    <div class="cart_contents">
+
+      <p class="body_text empty_cart hidden">Your Cart is Empty</p>
+
+      <!--Item 1-->
+      <div class="cart_item_container hidden">
+        <table class="cart_item_table">
+          <td class="cart_item_image_container">
+            <img src="/images/shop/p1.PNG" alt="Product Image" class="cart_item_image">
+          </td>
+          <td>
+            <h1 class="heading cart_item_name">GOLDEN WATTLE - Cushion Cover</h1>
+            <h2 class="subheading cart_item_price">$45.00 USD</h2>
+            <h3 class="heading cart_remove_button">REMOVE</h3>
+          </td>
+          <td class="cart_item_quantity_container">
+            <table class="cart_item_quantity_table">
+              <td style="text-align: left;">
+                <button class="heading cart_item_quantity_button">-</button>
+              </td>
+              <td>
+                <p class="heading cart_item_quantity_text">1</p>
+              </td>
+              <td style="text-align: right;">
+                <button class="heading cart_item_quantity_button">+</button>
+              </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+      <!--Item 2-->
+      <div class="cart_item_container">
+        <table class="cart_item_table">
+          <td class="cart_item_image_container">
+            <img src="/images/shop/p2.PNG" alt="Product Image" class="cart_item_image">
+          </td>
+          <td>
+            <h1 class="heading cart_item_name">RED ROSES - Deluxe Towel</h1>
+            <h2 class="subheading cart_item_price">$22.00 USD</h2>
+            <h3 class="heading cart_remove_button">REMOVE</h3>
+          </td>
+          <td class="cart_item_quantity_container">
+            <table class="cart_item_quantity_table">
+              <td style="text-align: left;">
+                <button class="heading cart_item_quantity_button">-</button>
+              </td>
+              <td>
+                <p class="heading cart_item_quantity_text">1</p>
+              </td>
+              <td style="text-align: right;">
+                <button class="heading cart_item_quantity_button">+</button>
+              </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+    </div>
+
+    <hr class="cart_border">
+
+    <table class="subtotal_table">
+      <td>
+        <p class="body_text subtotal_text">SUBTOTAL</p>
+      </td>
+      <td>
+        <p class="body_text subtotal_text">$22.00 USD</p>
+      </td>
+    </table>
+    <p class="caption shipping_notice">Shipping & taxes calculated at checkout</p>
+
+    <button class="next_button subheading" onclick="toggleVisibility2('page2', 'page1')">CHECK OUT</button>
+  </div>
+
+  <!--2nd page, Shipping Details-->
+  <div class="hidden_page" id="page2">
+
+      <table class="top_row">
+        <td><h2 class="heading cart_title">Shipping Details</h2></td>
+        <td class="close_container"><button class="close_button body_text" onclick="closeCart()">&times;</button></td>
+      </table>
+
+      <hr class="cart_border">
+
+      <!--Table for all inputs in this page-->
+      <form>
+      <table class="input_table">
+
+        <tr>
+          <td class="input_label">
+            <label for="input1" class="body_text input_label">Recepient Name</label>
+          </td>
+          <td>
+            <input type="text" id="input1" name="input1" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input2" class="body_text input_label">E-mail</label>
+          </td>
+          <td>
+            <input type="text" id="input2" name="input2" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input3" class="body_text input_label">Telephone</label>
+          </td>
+          <td>
+            <input type="text" id="input3" name="input3" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input4" class="body_text input_label">Country</label>
+          </td>
+          <td>
+            <input type="text" id="input4" name="input4" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input5" class="body_text input_label">Region/State</label>
+          </td>
+          <td>
+            <input type="text" id="input5" name="input5" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input6" class="body_text input_label">Postal Code</label>
+          </td>
+          <td>
+            <input type="text" id="input6" name="input6" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input7" class="body_text input_label">Address 1</label>
+          </td>
+          <td>
+            <input type="text" id="input7" name="input7" class="input_box">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_label">
+            <label for="input8" class="body_text input_label">Address 2</label>
+          </td>
+          <td>
+            <input type="text" id="input8" name="input8" class="input_box">
+          </td>
+        </tr>
+
+      </table>
+    </form>
+
+    <hr class="cart_border">
+
+    <!--Price breakdown-->
+    <table class="subtotal_table">
+      
+      <tr>
+        <td>
+          <p class="body_text subtotal_text">SUBTOTAL</p>
+        </td>
+        <td>
+          <p class="body_text subtotal_text">$22.00 USD</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="body_text subtotal_details">SHIPPING</p>
+        </td>
+        <td>
+          <p class="body_text subtotal_details">$5.00 USD</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="body_text subtotal_details">TAX</p>
+        </td>
+        <td>
+          <p class="body_text subtotal_details">$1.00 USD</p>
+        </td>
+      </tr>
+
+    </table>
+
+    <hr class="cart_border_mini">
+
+    <table class="estimated_total_table">
+      <tr>
+        <h2 class="heading estimated_total_text">ESTIMATED TOTAL</h2>
+        <p class="subheading estimated_total_price">$28.00 USD</p>
+      </tr>
+    </table>
+
+    <button class="next_button subheading" onclick="toggleVisibility2('page3', 'page2')">CONFIRM</button>
+
+  </div>
+
+  <!--3rd page, Payment Details-->
+  <div class="hidden_page" id="page3">
+
+    <!--Top row-->
+    <table class="top_row">
+      <td><h2 class="heading cart_title">Shipping Details</h2></td>
+      <td class="close_container"><button class="close_button body_text" onclick="closeCart()">&times;</button></td>
+    </table>
+
+    <hr class="cart_border">
+
+    <!--Input table 1-->
+    <table class="input_table">
+
+      <tr>
+        <td class="input_label">
+          <label for="input1" class="body_text input_label">Card Number</label>
+        </td>
+        <td>
+          <input type="text" id="input1" name="input1" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input2" class="body_text input_label">Expiry Date MM/YY</label>
+        </td>
+        <td>
+          <input type="text" id="input2" name="input2" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input3" class="body_text input_label">CVC</label>
+        </td>
+        <td>
+          <input type="text" id="input3" name="input3" class="input_box">
+        </td>
+      </tr>
+    </table>
+    <!--Hidden input table checkbox-->
+    <table class="payment_address_container">
+    <td>
+    <input type="checkbox" id="payment_checkbox" class="payment_address_checkbox" onchange="toggleVisibility('hidden_input1')" checked>
+    </td>
+    <td>
+      <p class="body_text checkbox_text">My delivery & billing address are the same.</p>
+    </td>
+    </table>
+    <!--Hidden input table-->
+    <table class="input_table hidden_input_table" id="hidden_input1">
+
+      <tr>
+        <td class="input_label">
+          <label for="input1" class="body_text input_label">Country</label>
+        </td>
+        <td>
+          <input type="text" id="input1" name="input1" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input2" class="body_text input_label">Region/State</label>
+        </td>
+        <td>
+          <input type="text" id="input2" name="input2" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input3" class="body_text input_label">Post Code</label>
+        </td>
+        <td>
+          <input type="text" id="input3" name="input3" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input3" class="body_text input_label">Address 1</label>
+        </td>
+        <td>
+          <input type="text" id="input4" name="input3" class="input_box">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="input_label">
+          <label for="input3" class="body_text input_label">Address 2</label>
+        </td>
+        <td>
+          <input type="text" id="input5" name="input3" class="input_box">
+        </td>
+      </tr>
+
+    </table>
+
+    <button class="next_button subheading" onclick="toggleVisibility2('page4', 'page3')">CONFIRM</button>
+
+  </div>
+
+  <!--4th page, Confirmation Page-->
+  <div class="hidden_page" id="page4">
+    <div class="confirmation_page">
+      <h1 class="heading confirmation_heading">THANKS FOR YOU ORDER!</h1>
+      <p class="body_text confirmation_text">Your order #0000 is in the works. We sent an email to email@email.com with your order recipt.</p>
+    </div>
+    <button class="last_close_button heading" onclick="closeCart()">CLOSE</button>
+  </div>
+
+</div>
+
+<script src="/js/toggle_visibility.js"></script>
+
+</body>
+</html>
