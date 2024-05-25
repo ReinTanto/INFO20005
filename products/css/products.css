@@ -127,7 +127,21 @@ main {
     border-collapse: collapse;
     text-align: center;
 }
-.add_button {
+.add_table td {
+    padding: 0; 
+    text-align: center;
+}
+.fill_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+.add_button a.fill_link {
     color: var(--beige);
     background-color: var(--brown);
     border: 2px solid var(--brown);
@@ -139,8 +153,7 @@ main {
 }
 .add_button_text {
     font-weight: 400;
-    font-size: .7rem;
-    height: 1rem;
+    font-size: .8rem;
 }
 .add_quantity {
     margin: 0;
