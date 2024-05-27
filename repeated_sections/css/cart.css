@@ -27,7 +27,7 @@
   background-color: var(--beige);
   box-shadow: 0px 0px 50px rgba(0, 0, 0, .8); 
   z-index: 10000; 
-  width: 90%;
+  width: 60%;
 }
 
 .top_row {
@@ -142,7 +142,7 @@
 
 /*Subtotal*/
 .subtotal_table {
-  width: 25%;
+  width: 30%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -315,5 +315,9 @@
   /*Page2*/
   .input_label {
     width: 45%;
+  }
+
+  .cart_box {
+    width: 90%;
   }
 }
