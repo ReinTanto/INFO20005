@@ -1,6 +1,6 @@
 /*Reinhart Aristeo Tanto - 1376786*/
 
-/* Main footer container */
+/*Main footer container*/
 .footer {
     background-color: var(--brown);
     color: var(--white);
@@ -10,21 +10,21 @@
     padding-bottom: 1px;
 }
     
-/* Two-column layout */
+/*two-column layout*/
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
     
-/* Left column */
+/*left column*/
 .f_left-column {
     flex: 1;
     text-align: left;
     padding-left: 1%;
 }
     
-/* Right column */
+/*right column*/
 .f_right-column {
     flex: 1;
     text-align: right;
@@ -32,7 +32,7 @@
     padding-right: 2%;
 }
     
-/* Left column contents */
+/*left column contents*/
 .f_table {
     width: 120%;
     text-align: left;
@@ -49,7 +49,7 @@
     text-align: left;
 }
 
-/* Right column contents */
+/*right column contents*/
 .nl_table {
     text-align: left;
     border: 1px solid #fff; 

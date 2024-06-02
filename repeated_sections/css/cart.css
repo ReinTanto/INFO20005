@@ -2,7 +2,7 @@
 
 
 
-/*For display different pages in checkout*/
+/*For display/hiding different pages in checkout*/
 .hidden_page {
   display: none;
 }
@@ -30,6 +30,7 @@
   width: 60%;
 }
 
+/*Top row containing title and close button*/
 .top_row {
   width: 100%;
   border-collapse: collapse;
@@ -40,6 +41,7 @@
   padding: 0;
 }
 
+/*Cart title*/
 .cart_title {
   color: var(--brown);
   font-weight: 500;
@@ -47,6 +49,7 @@
   margin: 0;
 }
 
+/*Close button styles*/
 .close_container {
   text-align: right;
 }
@@ -80,6 +83,7 @@
   margin-bottom: 1rem;
 }
 
+/*Table that holds items in cart*/
 .cart_item_table {
   width: 100%;
   display: inline-table;
@@ -140,7 +144,7 @@
   text-align: center;
 }
 
-/*Subtotal*/
+/*Subtotal and text in that section*/
 .subtotal_table {
   width: 30%;
   text-align: center;
@@ -170,6 +174,7 @@
   margin-bottom: 1rem;
 }
 
+/*Next button*/
 .next_button {
   width: 100%;
   height: 3rem;
@@ -180,6 +185,7 @@
   font-size: 1.1rem;
 }
 
+/*Style for empty art text*/
 .empty_cart {
   font-size: .7rem;
   color: var(--brown);
@@ -192,7 +198,7 @@
   min-height: 5rem;
 }
 
-
+/*Style for table that takes text input in page 2 and 3*/
 .input_table {
  text-align: center;
  width: 95%;
@@ -215,6 +221,7 @@
   width: 90%;
 }
 
+/*More styles for subtotal segment*/
 .subtotal_details {
   margin: 0;
   color: var(--brown);
@@ -249,6 +256,7 @@
   font-size: .8rem;
 }
 
+/*Style for "payment address same as shipping" checkbox*/
 .payment_address_container {
   width: 90%;
   margin-left: auto;
